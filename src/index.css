@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Dark Blue & Amber Theme for Online Examination System */
+    --background: 220 50% 8%;
+    --foreground: 45 100% 69%;
+
+    --card: 220 45% 12%;
+    --card-foreground: 45 100% 85%;
+
+    --popover: 220 45% 12%;
+    --popover-foreground: 45 100% 85%;
+
+    --primary: 45 100% 69%;
+    --primary-foreground: 220 50% 8%;
+
+    --secondary: 220 45% 15%;
+    --secondary-foreground: 45 100% 85%;
+
+    --muted: 220 40% 18%;
+    --muted-foreground: 45 50% 60%;
+
+    --accent: 220 45% 20%;
+    --accent-foreground: 45 100% 75%;
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 45 100% 95%;
+
+    --border: 220 35% 25%;
+    --input: 220 35% 25%;
+    --ring: 45 100% 69%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 220 50% 6%;
+    --sidebar-foreground: 45 100% 75%;
+    --sidebar-primary: 45 100% 69%;
+    --sidebar-primary-foreground: 220 50% 8%;
+    --sidebar-accent: 220 45% 15%;
+    --sidebar-accent-foreground: 45 100% 85%;
+    --sidebar-border: 220 35% 20%;
+    --sidebar-ring: 45 100% 69%;
+
+    /* Success color for correct answers */
+    --success: 120 60% 50%;
+    --success-foreground: 0 0% 100%;
+
+    /* Warning color for pending states */
+    --warning: 35 100% 55%;
+    --warning-foreground: 220 50% 8%;
+
+    /* Exam specific colors */
+    --exam-active: 45 100% 69%;
+    --exam-inactive: 220 35% 35%;
+    --score-excellent: 120 60% 50%;
+    --score-good: 85 85% 55%;
+    --score-average: 35 100% 55%;
+    --score-poor: 0 75% 55%;
+  }
+
+  .dark {
+    --background: 220 50% 8%;
+    --foreground: 45 100% 69%;
+
+    --card: 220 45% 12%;
+    --card-foreground: 45 100% 85%;
+
+    --popover: 220 45% 12%;
+    --popover-foreground: 45 100% 85%;
+
+    --primary: 45 100% 69%;
+    --primary-foreground: 220 50% 8%;
+
+    --secondary: 220 45% 15%;
+    --secondary-foreground: 45 100% 85%;
+
+    --muted: 220 40% 18%;
+    --muted-foreground: 45 50% 60%;
+
+    --accent: 220 45% 20%;
+    --accent-foreground: 45 100% 75%;
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 45 100% 95%;
+
+    --border: 220 35% 25%;
+    --input: 220 35% 25%;
+    --ring: 45 100% 69%;
+
+    --sidebar-background: 220 50% 6%;
+    --sidebar-foreground: 45 100% 75%;
+    --sidebar-primary: 45 100% 69%;
+    --sidebar-primary-foreground: 220 50% 8%;
+    --sidebar-accent: 220 45% 15%;
+    --sidebar-accent-foreground: 45 100% 85%;
+    --sidebar-border: 220 35% 20%;
+    --sidebar-ring: 45 100% 69%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
